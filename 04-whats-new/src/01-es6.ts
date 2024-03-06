@@ -35,7 +35,11 @@ generatePage("<p>I am on the page</p>");
 
 // 3. Object literals
 
-function getLaptop(make, model, year) {
+let variable; // inferred the any
+variable = {};
+
+function getLaptop(make: string, model: string, year: number) {
+  // implied the any
   return {
     make,
     model,
