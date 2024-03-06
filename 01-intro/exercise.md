@@ -14,8 +14,6 @@ In this section, you'll practice using different types in TypeScript.
 - Define a variable of type void and assign it a value.
 
 - Log these values out
-- Run the code with ts-node
-- Compile the code and run the JS file
 
 ## Exercise 2 - Interfaces
 
@@ -25,8 +23,6 @@ In this section, you'll practice using interfaces to define the shape of objects
 - Define a variable of type Person and assign it an object that conforms to the Person interface.
 - Define a function that takes a Person object as a parameter and returns a string that includes the person's name and age.
 - Use your function
-- Run the code with ts-node
-- Compile the code and run the JS file
 
 ## Exercise 3 - Dictionaries
 
@@ -34,8 +30,6 @@ In this section, you'll practice using dictionaries (also known as index signatu
 
 - Define a variable of type { [key: string]: number } and assign it an object with at least two key-value pairs.
 - Define a function that takes a dictionary of numbers as a parameter and returns the sum of all the values
-- Run the code with ts-node
-- Compile the code and run the JS file
 
 ## Exercise 4 - Guarded Types
 
@@ -44,8 +38,6 @@ In this section, you'll practice using guarded types to refine the type of a var
 - Define a variable of type unknown and assign it a value.
 - Use a type guard to check if the variable is a string. If it is, log the string to the console.
 - Use another type guard to check if the variable is a number. If it is, log the number to the console.
-- Run the code with ts-node
-- Compile the code and run the JS file
 
 # Conclusion
 

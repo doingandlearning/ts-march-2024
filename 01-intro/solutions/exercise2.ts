@@ -14,4 +14,4 @@ function getPersonInfo(person: Person): string {
   return `${person.name} is ${person.age} years old.`;
 }
 
-console.log(getPersonInfo(personVar));
+console.log(getPersonInfo(personVar)); // this
