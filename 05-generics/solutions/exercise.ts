@@ -12,9 +12,16 @@
 {
   // Exercise 2: the return type should be the input type but only a string
   const returnWhatIPassIn = <T extends string>(t: T) => t;
+  // const returnWhatIPassIn = (t: string) => t;
 
   const one = returnWhatIPassIn(1); // should error
   const kevin = returnWhatIPassIn("kevin");
+
+  //
+
+  // function formatedUser<T extends User> (input: T) {
+
+  // }
 }
 
 {

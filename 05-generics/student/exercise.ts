@@ -54,7 +54,7 @@
   // Exercise 5: Add types to this function so that the types of
   // the uses in the test cases is correct and not any.
 
-  function filterItems(arr, predicate) {
+  function filterItems<T>(arr: T[], predicate: (item: T) => boolean) {
     return arr.filter(predicate);
   }
 
