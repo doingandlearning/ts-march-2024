@@ -5,7 +5,7 @@ module.exports = {
 	entry: "./src/app.ts",
 	resolve: {
 		extensions: [".ts", ".js", ".jsx", ".tsx"]
-	}, /* compile the ts,  */
+	},
 	module: {
 		rules: [
 			{
@@ -22,7 +22,6 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: resolve(__dirname, "src", "index.html")
-			// "./src/index.html"
 		})
 	]
 }
