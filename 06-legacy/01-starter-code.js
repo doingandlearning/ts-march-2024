@@ -1,5 +1,10 @@
+// @ts-check
+
 var PI = 3.14;
 
+// Shape types => Square/Triangle/Circle/Rectangle
+// Shape type -> extends 
+// interface => functions (shape: Shape) => number
 function getCircleArea(circle) {
   var radius = circle.radius;
   return radius * radius * PI;

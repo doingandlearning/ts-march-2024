@@ -39,8 +39,8 @@ function isString(input: unknown): input is string {
 
 const unknownVar: unknown = 12;
 
-if(isString(unknownVar)) {
-	unknownVar.
+if (isString(unknownVar)) {
+  unknownVar;
 }
 
 // interface User {
