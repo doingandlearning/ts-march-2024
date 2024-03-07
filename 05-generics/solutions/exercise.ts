@@ -1,7 +1,7 @@
 {
   // Exercise 1: the return type should be the same as the input type
 
-  const returnWhatIPassIn = (t: unknown) => {
+  const returnWhatIPassIn = <T>(t: T) => {
     return t;
   };
 
@@ -11,7 +11,7 @@
 
 {
   // Exercise 2: the return type should be the input type but only a string
-  const returnWhatIPassIn = (t: unknown) => t;
+  const returnWhatIPassIn = <T extends string>(t: T) => t;
 
   const one = returnWhatIPassIn(1); // should error
   const kevin = returnWhatIPassIn("kevin");
@@ -20,7 +20,7 @@
 {
   // Exercise 3: Return an object with the same keys as the input object
   // with the correct types.
-  function returnBothOfWhatIPassIn(a: unknown, b: unknown) {
+  function returnBothOfWhatIPassIn<T, U>(a: T, b: U) {
     return {
       a,
       b,
@@ -37,7 +37,7 @@
 {
   // Exercise 4: Return an object which extracts a and b from the object passed
   // in maintaining the types.
-  const returnBothOfWhatIPassIn = (params: { a: unknown; b: unknown }) => {
+  const returnBothOfWhatIPassIn = <T, U>(params: { a: T; b: U }) => {
     return {
       first: params.a,
       second: params.b,
