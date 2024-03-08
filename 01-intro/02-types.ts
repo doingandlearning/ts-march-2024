@@ -33,14 +33,13 @@
 
   function doSomethingWithAge(age: unknown) {
     // I don't know yet!
+
     if (typeof age === "string") {
       const newAge = age;
     }
   }
 
   let newVar: never;
-
-  newVar = "Kevin";
 
   function example(x: string | number): boolean {
     if (typeof x === "string") {
@@ -60,9 +59,9 @@
   // enum
 
   enum STATUS_CODE {
-    "OK",
-    "NOT_FOUND",
-    "UNAUTHORIZED",
+    "OK" = "OK", // 0
+    "NOT_FOUND" = "NOT_FOUND", // 1
+    "UNAUTHORIZED" = "UNAUTHORIZED", // 2
   }
 
   STATUS_CODE.OK;
