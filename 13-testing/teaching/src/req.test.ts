@@ -19,9 +19,14 @@ test("responds with data", async () => {
 });
 
 test("unhappy path for fakeFetch", async () => {
+  const responsePromise = fakeFetch("http://error.com");
+  vi.runAllTimers();
+  await expect(responsePromise).rejects.toThrow("network error");
+
   try {
     const responsePromise = fakeFetch("http://error.com");
     vi.runAllTimers();
+    await expect(responsePromise).rejects.toThrow("network error");
     const response = await responsePromise;
   } catch (error) {
     expect(error).toBeDefined();
