@@ -5,6 +5,7 @@ import { usePressObserver } from "../PressObserver"
 import styles from "./Key.module.css"
 
 type PressCallback = () => void
+
 type KeyProps = {
   type: NoteType
   label: string
@@ -13,6 +14,8 @@ type KeyProps = {
   onUp: PressCallback
   onDown: PressCallback
 }
+
+
 
 export const Key: FunctionComponent<KeyProps> = ({
   type,

@@ -10,7 +10,7 @@ type Settings = {
 
 interface Adapted {
   loading: boolean;
-  current: Optional<InstrumentName>;
+  current: Optional<InstrumentName>; // InstrumentName | null
 
   load(instrument?: InstrumentName): Promise<void>;
   play(note: MidiValue): Promise<void>;

@@ -1,5 +1,5 @@
 import { Footer } from "./components/Footer"
-import { Logo } from "./components/Logo"
+import { Logo } from "./components/Logo/Logo"
 import { Main } from "./components/Main"
 import './App.css'
 
